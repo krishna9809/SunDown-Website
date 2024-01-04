@@ -77,7 +77,7 @@ html,body{
 }
 
 .nav-text h4:hover a {
-    color: #fff;
+    color: #FE330A;
 }
 
 .center{
@@ -106,4 +106,193 @@ html,body{
     width: 100%;
     border-radius: 20px;
     margin-top: 4vw;
+    position: relative;
+}
+
+.hero-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    
+    right: 0;
+    top: 75vh;
+
+}
+
+.hero1-shape{
+    background-color: #FE330A;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+.hero2-shape{
+    background-color: #FE330A;
+    border-radius: 50%;
+    height: 30vw;
+    width: 30vw;
+    filter: blur(20px);
+    position: absolute;
+
+    animation: anime2 3s linear infinite alternate;
+
+}
+
+.hero3-shape{
+    background-color: #FE330A;
+    border-radius: 50%;
+    height: 30vw;
+    width: 30vw;
+    filter: blur(20px);
+    position: absolute;
+    animation: anime 3s linear infinite alternate;
+
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translate(10%,-10%);
+    }
+}
+
+@keyframes anime2 {
+    from{
+        transform: translate(-20%,20%);
+    }
+    to{
+        transform: translate(10%,-10%);
+    }
+}
+
+
+.page-2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+    
+}
+
+.moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 4vw;
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.circle-shape{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FE330A;
+    display: inline-block;
+    margin: 1vw 2vw;
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.page-2-bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+}
+
+.page-2-bottom h1{
+    font-size: 4vw;
+    width: 60%;
+    color: #0b0500;
+    font-size: 4.25em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.bottom-part-2{
+    width: 25%;
+    margin-top: 5vw;
+}
+
+.bottom-part-2 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 3vw;
+}
+
+.bottom-part-2 p{
+    
+        color: #0b0500;
+        margin-bottom: 0;
+        font-family: Neuehaasdisplay roman,sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.4;
+    
+}
+
+.page-2 .page-2-shape{
+    height: 38vw;
+    width: 38vw;
+    position: relative;
+}
+
+
+
+.page-2-shape .shape-2{
+    background-color: #fe940a;
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    top: -60%;
+    left: 35%;
+    z-index: -9;
+    animation: page-2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes page-2 {
+    from{
+        transform: translate(-10%,10%) skew(0);
+    }
+
+    to{
+        transform: translate(10%,-10%) skew(10deg);
+    }
 }
