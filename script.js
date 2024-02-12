@@ -53,3 +53,15 @@ h3.addEventListener("click", function(){
   h2.style.color = "#504A45";
   h3.style.color = "#fff";
 })
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
