@@ -320,12 +320,20 @@ html,body{
     border-bottom: 1px solid #38383864;
     overflow: hidden;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 2vw;
 }
 
 .elem h2 {
     font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem h5{
+    font-size: 1.4vw;
+    font-weight: 100;
     position: relative;
     z-index: 9;
 }
@@ -343,3 +351,136 @@ html,body{
 .elem:hover .overlay {
     top: 0;
 }
+
+
+.fixed-img{
+    height: 29vw;
+    width: 24vw;
+    border-radius: 16px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-4-part-1{
+    min-height: 35vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 3vw 2vw;
+}
+
+.project{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.project h4{
+    padding: 10px 20px;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    transition: all ease 0.4s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.project h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+
+.project h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.project h4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+.project h4:hover a {
+    color: #FE330A;
+}
+
+.page-4-part-2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-4-back{
+    height: 100vh;
+    width: 98%;
+    background-color: #0b0500;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.page-5{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.page-4-back .page-4-left{
+    padding: 0 0 0 120px;
+}
+
+
+
+.page-4-back .head h2{
+    font-size: 5vw;
+    line-height: 65px;
+    color: #504A45;
+    cursor: pointer;
+    transition: 200ms;
+
+   
+}
+
+.page-4-back .head h2:hover{
+    color: #fff;
+}
+
+.page-4-back .head-content{
+    width: 320px;
+    margin-top: 30px;
+    font-size: 1.2vw;
+    font-weight:normal;
+}
+
+.page-4-right{
+    height: 100%;
+    width: 60%;
+    border-radius: 18px;
+    background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-800.jpg');
+}
+
+
