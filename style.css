@@ -14,6 +14,11 @@ html,body{
     width: 100%;
 }
 
+.main{
+    position: relative;
+    z-index: 10;
+}
+
 .page-1{
     min-height: 100vh;
     width: 100%;
@@ -443,10 +448,6 @@ html,body{
     color: #fff;
 }
 
-.page-5{
-    height: 100vh;
-    width: 100%;
-}
 
 
 .page-4-back .page-4-left{
@@ -459,15 +460,10 @@ html,body{
     font-size: 5vw;
     line-height: 65px;
     color: #504A45;
-    cursor: pointer;
-    transition: 200ms;
-
-   
+    cursor: pointer; 
 }
 
-.page-4-back .head h2:hover{
-    color: #fff;
-}
+
 
 .page-4-back .head-content{
     width: 320px;
@@ -481,6 +477,50 @@ html,body{
     width: 60%;
     border-radius: 18px;
     background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-800.jpg');
+    transition: 1s ease;
+    background-size: cover;
+    background-position: center;
 }
 
 
+.page-5{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.page-6{
+    height: 115vh;
+    width: 100%;
+    /* background-color: #0b0500; */
+    color: #fff;
+}
+
+.footer{
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    height: 105vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    
+}
+
+.footer h1{
+    font-size: 23.9vw;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-lower{
+    margin-top: 10vh;
+    height: 10vh;
+    width: 100%;
+    border-top: 1px #fff;
+}

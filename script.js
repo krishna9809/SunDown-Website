@@ -31,4 +31,25 @@ image.addEventListener("click", function(){
 })
 
 
+var h1 = document.querySelector("#head1 h2");
+var h2 = document.querySelector("#head2 h2");
+var h3 = document.querySelector("#head3 h2");
 
+
+h1.addEventListener("click", function(){
+  h1.style.color = "#fff";
+  h2.style.color = "#504A45";
+  h3.style.color = "#504A45";
+})
+
+h2.addEventListener("click", function(){
+  h1.style.color = "#504A45";
+  h2.style.color = "#fff";
+  h3.style.color = "#504A45";
+})
+
+h3.addEventListener("click", function(){
+  h1.style.color = "#504A45";
+  h2.style.color = "#504A45";
+  h3.style.color = "#fff";
+})
