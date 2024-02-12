@@ -150,6 +150,7 @@ html,body{
     position: absolute;
     animation: anime 3s linear infinite alternate;
 
+
 }
 
 @keyframes anime {
@@ -175,6 +176,10 @@ html,body{
     min-height: 100vh;
     width: 100%;
     padding: 8vw 0;
+    position: relative;
+    background-color: #EFEAE3;
+
+
     
 }
 
@@ -229,6 +234,10 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 4vw;
+    position: relative;
+    z-index: 9;
+
+
 }
 
 .page-2-bottom h1{
@@ -277,9 +286,9 @@ html,body{
     filter: blur(20px);
     border-radius: 50%;
     position: absolute;
-    top: -60%;
+    top: -40%;
     left: 35%;
-    z-index: -9;
+    
     animation: page-2;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -295,4 +304,42 @@ html,body{
     to{
         transform: translate(10%,-10%) skew(10deg);
     }
+}
+
+.page-3{
+    margin: -20vw 0 0 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+    top: 0;
 }
