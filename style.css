@@ -941,6 +941,10 @@ body {
     font-weight: 100;
     font-size: 3.5vw;
   }
+
+  .page-4-back .page-4-left {
+    padding: 0 0 0 10px;
+}
 }
 
 .loader {
